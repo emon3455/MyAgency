@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+:root{
+    --primary-color: #c2422b;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+
+.btn-secondary{
+    background-color: #ffff;
+    color: var(--primary-color);
+}
+
+/* common style end */
+
+
+/* header style start */
+/* -------------------------------- */
+
+.header{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* navigation style start*/
+
+.navigation-bar{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+}
+
+.nav-container{
+    display: flex;
+}
+
+.nav-container .nav-list{
+    list-style: none;
+}
+
+.nav-container .nav-item{
+    margin: 0 0.5rem;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-container .nav-item:hover{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+/* navigation style end*/
+
+/* banner style start */
+
+.banner{
+    min-height: 85vh;
+    padding: 0 25%;
+    text-align: center;
+    background-blend-mode: multiply;
+    background-image: url(./asset/image/background.jpg), linear-gradient(to right, #586f74 , #707047);
+    background-size: 100% 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title{
+    font-size: 4.5rem;
+    color: #ffff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.banner-description{
+    font-size: 1.4rem;
+    color: #ffff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.btn-container{
+    margin: 1rem 0;
+}
+
+/* banner style end */
+
+/* ---------------------------------- */
+/* header style end */
+
+
+/* main section style start  */
+
+/* main section style end  */
+
+
+
+
+/* Responsive design start */
+
+@media screen and (max-width: 576px) {
+
+    /* navigation */
+    .navigation-bar{
+       flex-direction: column;
+    }
+
+    .nav-container .nav-item{
+        margin: 0 0.1rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        
+    }
+    /* navigation */
+
+
+    /* banner start */
+    .banner{
+        padding: 0 5%;
+        background-image: url(./asset/image/girl-3.jpg), linear-gradient(to right, #586f74 , #707047);
+        background-size: 100% 85vh;
+    }
+
+    .banner-title{
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .banner-description{
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .btn{    
+        font-size: 1.2rem;
+    }
+
+    /* banner end */
+
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+
+    /* navigation */
+    .navigation-bar{
+       flex-direction: column;
+    }
+
+    .nav-container .nav-item{
+        margin: 0 0.2rem;
+        padding: 0.3rem 0.7rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        
+    }
+    /* navigation */
+
+    /* banner start */
+    .banner{
+        padding: 0 10%;
+    }
+
+    .banner-title{
+        font-size: 3rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .banner-description{
+        font-size: 1.3rem;
+        margin-bottom: 0.9rem;
+
+    }
+    /* banner end */
+
+}
+
+/* Responsive design end */
