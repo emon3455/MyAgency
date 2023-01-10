@@ -31,6 +31,16 @@ body{
     color: var(--primary-color);
 }
 
+.section-header{
+    font-size: 2.5rem;
+    margin: 1.5rem  0;
+}
+
+.section-description{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
 /* common style end */
 
 
@@ -51,6 +61,7 @@ body{
     justify-content: space-around;
     align-items: center;
     min-height: 15vh;
+    background-color: black;
 }
 
 .nav-container{
@@ -118,6 +129,110 @@ body{
 
 /* main section style start  */
 
+/* .main{
+   margin: 4rem;
+} */
+
+/* service start */
+
+.service{
+    min-height: 100vh;
+    padding: 4rem;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.service-left-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.service-left-content .btn{
+    margin-top: 1rem;
+}
+
+.service-left-content .services{
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.author-img-container{
+    width: 30%;
+}
+
+.author-img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.author-info{
+    padding: 0.5rem;
+    border-right: 2px solid red;
+    width: 40%;
+}
+
+.author-name{
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.author-description{
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.srv-btn2{
+    width: 30%;
+}
+.srv-btn2 .btn{
+    font-size: 1rem;
+    padding: 0.55rem 1rem;
+    margin-top: -0.2rem;
+}
+
+
+.service-right-content{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+    text-align: center;
+    align-content: center;
+}
+
+.service-provided{
+    border-radius: 1rem;
+    margin: 0.5rem;
+    background-color: #f1f1f1;
+}
+
+.srv-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.srv-img{
+    margin-top: 2rem;
+    width: 80%;
+    height: 70%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* service end */
+
 /* main section style end  */
 
 
@@ -167,8 +282,28 @@ body{
     .btn{    
         font-size: 1.2rem;
     }
-
     /* banner end */
+
+
+    /* service start */
+
+    .service{
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .service-left-content{
+        width: 100%;
+    }
+
+    .service-right-content{
+        width: 100%;   
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    /* service end */
+
 
 
 }
@@ -205,6 +340,25 @@ body{
 
     }
     /* banner end */
+
+
+    /* service start */
+
+    .service{
+        flex-direction: column;
+        padding: 4rem;
+    }
+
+    .service-left-content{
+        width: 100%;
+    }
+
+    .service-right-content{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    /* service end */
 
 }
 
